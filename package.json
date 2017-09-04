@@ -1,0 +1,17 @@
+{
+  "name": "webcomponents-sandbox",
+  "private": true,
+  "scripts": {
+    "build": "browserify -t babelify -o fallback.js app.js"
+  },
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0"
+  }
+}
