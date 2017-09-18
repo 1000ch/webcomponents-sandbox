@@ -9,6 +9,9 @@
       "transform-es2015-modules-commonjs"
     ]
   },
+  "dependencies": {
+    "wicg-inert": "^1.1.4"
+  },
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babelify": "^7.3.0",

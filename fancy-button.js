@@ -3,9 +3,10 @@ export default class FancyButton extends HTMLElement {
     return `
       <style>
         button {
-          display: inline-block;
-          background: tomato;
+          display: inline-flex;
+          background: #0086b3;
           color: white;
+          margin: 0.5em;
           padding: 1em;
           font-size: 16px;
           font-family: sans-serif;

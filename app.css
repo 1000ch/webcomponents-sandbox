@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+#toggle {
+  margin-right: 10px;
+}
+
+@media (min-width: 961px) {
+  #toggle {
+    display: none;
+  }
+}
+
+.nav {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.nav dd {
+  margin-left: 0;
+}

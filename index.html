@@ -2,10 +2,160 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Web Components sandbox</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Material+Icons">
   </head>
   <body>
-    <fancy-button>This is a fancy button</fancy-button>
-    <fancy-div-button>This is a fancy div button</fancy-div-button>
+    <app-layout>
+      <app-drawer slot="drawer">
+        <nav class="nav">
+          <h2>Spec</h2>
+          <dl>
+            <dt><a href="#shadow-dom">Shadow DOM</a></dt>
+            <dd>
+              <ul>
+                <li>Shadow DOM</li>
+                <li>Shadow DOM v1: Self-Contained Web Components</li>
+                <li>Shadow DOM v1 - Can I use...</li>
+              </ul>
+            </dd>
+            <dt><a href="#custom-elements">Custom Elements</a></dt>
+            <dd>
+              <ul>
+                <li>Custom Elements</li>
+                <li>Custom Elements v1: Reusable Web Components</li>
+                <li>Custom Elements v1 - Can I use...</li>
+              </ul>
+            </dd>
+            <dt>
+              <a href="#templates">Templates</a>
+            </dt>
+            <dd>
+              <ul>
+                <li>4.12.3 The template element</li>
+                <li>HTML templates - Can I use...</li>
+              </ul>
+            </dd>
+            <dt>
+              <a href="#es-modules">ES Modules</a>
+            </dt>
+            <dd>
+              <ul>
+                <li>ES6 Modules in Depth</li>
+                <li>ECMAScript modules in browsers - JakeArchibald.com</li>
+                <li>JavaScript modules via script tag - Can I use...</li>
+              </ul>
+            </dd>
+          </dl>
+          <h2>Tools</h2>
+          <dl>
+            <dt>
+              <a href="#libraries">Libraries</a>
+            </dt>
+            <dd>
+              <ul>
+                <li>Polymer/polymer</li>
+                <li>skatejs/skatejs</li>
+                <li>PolymerLabs/lit-html</li>
+              </ul>
+            </dd>
+            <dt>
+              <a href="#polyfills">Polyfills</a>
+            </dt>
+            <dd>
+              <ul>
+                <li>webcomponents/webcomponentsjs</li>
+                <li>webcomponents/ShadyDOM</li>
+                <li>webcomponents/ShadyCSS</li>
+              </ul>
+            </dd>
+            <dt>
+              <a href="#tools">Tools</a>
+            </dt>
+            <dd>
+              <ul>
+                <li>Custom Elements Everywhere</li>
+              </ul>
+            </dd>
+          </dl>
+        </nav>
+      </app-drawer>
+      <app-header>
+        <i id="toggle" class="material-icons material-spec-icon" title="Show navigation">menu</i>
+        <h2>Web Components sandbox</h2>
+      </app-header>
+      <app-main>
+        <fancy-button>fancy button</fancy-button>
+        <fancy-button>fancy button</fancy-button>
+        <fancy-button>fancy button</fancy-button>
+        <fancy-button>fancy button</fancy-button>
+        <fancy-button>fancy button</fancy-button>
+        <fancy-button>fancy button</fancy-button>
+        <fancy-button>fancy button</fancy-button>
+        <fancy-button>fancy button</fancy-button>
+        <fancy-button>fancy button</fancy-button>
+        <fancy-button>fancy button</fancy-button>
+        <fancy-button>fancy button</fancy-button>
+        <fancy-button>fancy button</fancy-button>
+        <section>
+          <h2 id="shadow-dom">Shadow DOM</h2>
+          <ul>
+            <li><a href="https://www.w3.org/TR/shadow-dom/">Shadow DOM</a></li>
+            <li><a href="https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom">Shadow DOM v1: Self-Contained Web Components</a></li>
+            <li><a href="http://caniuse.com/#feat=shadowdomv1">Shadow DOM v1 - Can I use...</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="custom-elements">Custom Elements</h2>
+          <ul>
+            <li><a href="https://www.w3.org/TR/custom-elements/">Custom Elements</a></li>
+            <li><a href="https://developers.google.com/web/fundamentals/architecture/building-components/customelements">Custom Elements v1: Reusable Web Components</a></li>
+            <li><a href="http://caniuse.com/#feat=custom-elementsv1">Custom Elements v1 - Can I use...</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="templates">Templates</h2>
+          <ul>
+            <li><a href="https://html.spec.whatwg.org/#the-template-element">4.12.3 The template element</a></li>
+            <li><a href="http://caniuse.com/#feat=template">HTML templates - Can I use...</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="es-modules">ES Modules</h2>
+          <ul>
+            <li><a href="https://ponyfoo.com/articles/es6-modules-in-depth">ES6 Modules in Depth</a></li>
+            <li><a href="https://jakearchibald.com/2017/es-modules-in-browsers/">ECMAScript modules in browsers - JakeArchibald.com</a></li>
+            <li><a href="http://caniuse.com/#feat=es6-module">JavaScript modules via script tag - Can I use...</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="libraries">Libraries</h2>
+          <ul>
+            <li><a href="https://github.com/Polymer/polymer">Polymer/polymer</a></li>
+            <li><a href="https://github.com/skatejs/skatejs">skatejs/skatejs</a></li>
+            <li><a href="https://github.com/PolymerLabs/lit-html">PolymerLabs/lit-html</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="polyfills">Polyfills</h2>
+          <ul>
+            <li><a href="https://github.com/webcomponents/webcomponentsjs">webcomponents/webcomponentsjs</a></li>
+            <li><a href="https://github.com/webcomponents/shadydom">webcomponents/ShadyDOM</a></li>
+            <li><a href="https://github.com/webcomponents/shadycss">webcomponents/ShadyCSS</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="tools">Tools</h2>
+          <ul>
+            <li><a href="https://github.com/webcomponents/custom-elements-everywhere">Custom Elements Everywhere</a></li>
+          </ul>
+        </section>
+      </app-main>
+    </app-layout>
+    <script type="module" src="./node_modules/wicg-inert/dist/inert.min.js"></script>
     <script type="module" src="./app.js"></script>
     <script type="nomodule" src="./fallback.js"></script>
   </body>
