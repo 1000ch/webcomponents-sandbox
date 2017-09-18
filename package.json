@@ -2,6 +2,7 @@
   "name": "webcomponents-sandbox",
   "private": true,
   "scripts": {
+    "postinstall": "cp node_modules/wicg-inert/dist/inert.min.js lib",
     "build": "browserify -t babelify -o fallback.js app.js"
   },
   "babel": {
