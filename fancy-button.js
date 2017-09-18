@@ -9,8 +9,6 @@ export default class FancyButton extends HTMLElement {
           margin: 0.5em;
           padding: 1em;
           font-size: 16px;
-          font-family: sans-serif;
-          font-weight: bold;
           border-radius: 0.5em;
           cursor: pointer;
           border: none;
