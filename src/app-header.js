@@ -7,8 +7,10 @@ export default class AppHeader extends HTMLElement {
         }
 
         header {
+          position: fixed;
           display: flex;
           align-items: center;
+          width: 100%;
           height: 64px;
           padding: 10px;
           box-sizing: border-box;
