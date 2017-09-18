@@ -1,7 +1,7 @@
-import AppLayout from './app-layout.js';
-import AppDrawer from './app-drawer.js';
-import AppHeader from './app-header.js';
-import AppMain from './app-main.js';
+import AppLayout from './src/app-layout.js';
+import AppDrawer from './src/app-drawer.js';
+import AppHeader from './src/app-header.js';
+import AppMain from './src/app-main.js';
 import FancyButton from './fancy-button.js';
 
 customElements.define('app-layout', AppLayout);
