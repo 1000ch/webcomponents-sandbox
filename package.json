@@ -2,7 +2,7 @@
   "name": "webcomponents-sandbox",
   "private": true,
   "scripts": {
-    "postinstall": "cp node_modules/wicg-inert/dist/inert.min.js lib",
+    "postinstall": "cp node_modules/wicg-inert/dist/inert.min.js lib && cp node_modules/@webcomponents/webcomponentsjs/webcomponents-sd-ce.js lib",
     "build": "browserify -t babelify -o fallback.js app.js"
   },
   "babel": {
@@ -11,6 +11,7 @@
     ]
   },
   "dependencies": {
+    "@webcomponents/webcomponentsjs": "^1.0.11",
     "wicg-inert": "^1.1.4"
   },
   "devDependencies": {
