@@ -12,75 +12,24 @@
     <app-layout>
       <app-drawer slot="drawer">
         <nav class="nav">
+          <h2>Demo</h2>
+          <ul>
+            <li><a href="#fancy-button">Fancy Button</a></li>
+            <li><a href="#color-button">Color Button</a></li>
+          </ul>
           <h2>Spec</h2>
-          <dl>
-            <dt><a href="#shadow-dom">Shadow DOM</a></dt>
-            <dd>
-              <ul>
-                <li>Shadow DOM</li>
-                <li>Shadow DOM v1: Self-Contained Web Components</li>
-                <li>Shadow DOM v1 - Can I use...</li>
-              </ul>
-            </dd>
-            <dt><a href="#custom-elements">Custom Elements</a></dt>
-            <dd>
-              <ul>
-                <li>Custom Elements</li>
-                <li>Custom Elements v1: Reusable Web Components</li>
-                <li>Custom Elements v1 - Can I use...</li>
-              </ul>
-            </dd>
-            <dt>
-              <a href="#templates">Templates</a>
-            </dt>
-            <dd>
-              <ul>
-                <li>4.12.3 The template element</li>
-                <li>HTML templates - Can I use...</li>
-              </ul>
-            </dd>
-            <dt>
-              <a href="#es-modules">ES Modules</a>
-            </dt>
-            <dd>
-              <ul>
-                <li>ES6 Modules in Depth</li>
-                <li>ECMAScript modules in browsers - JakeArchibald.com</li>
-                <li>JavaScript modules via script tag - Can I use...</li>
-              </ul>
-            </dd>
-          </dl>
+          <ul>
+            <li><a href="#shadow-dom">Shadow DOM</a></li>
+            <li><a href="#custom-elements">Custom Elements</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#es-modules">ES Modules</a></li>
+          </ul>
           <h2>Tools</h2>
-          <dl>
-            <dt>
-              <a href="#libraries">Libraries</a>
-            </dt>
-            <dd>
-              <ul>
-                <li>Polymer/polymer</li>
-                <li>skatejs/skatejs</li>
-                <li>PolymerLabs/lit-html</li>
-              </ul>
-            </dd>
-            <dt>
-              <a href="#polyfills">Polyfills</a>
-            </dt>
-            <dd>
-              <ul>
-                <li>webcomponents/webcomponentsjs</li>
-                <li>webcomponents/ShadyDOM</li>
-                <li>webcomponents/ShadyCSS</li>
-              </ul>
-            </dd>
-            <dt>
-              <a href="#tools">Tools</a>
-            </dt>
-            <dd>
-              <ul>
-                <li>Custom Elements Everywhere</li>
-              </ul>
-            </dd>
-          </dl>
+          <ul>
+            <li><a href="#libraries">Libraries</a></li>
+            <li><a href="#polyfills">Polyfills</a></li>
+            <li><a href="#tools">Tools</a></li>
+          </ul>
         </nav>
       </app-drawer>
       <app-header>
@@ -88,18 +37,42 @@
         <h2>Web Components sandbox</h2>
       </app-header>
       <app-main>
-        <fancy-button>fancy button</fancy-button>
-        <fancy-button>fancy button</fancy-button>
-        <fancy-button>fancy button</fancy-button>
-        <fancy-button>fancy button</fancy-button>
-        <fancy-button>fancy button</fancy-button>
-        <fancy-button>fancy button</fancy-button>
-        <fancy-button>fancy button</fancy-button>
-        <fancy-button>fancy button</fancy-button>
-        <fancy-button>fancy button</fancy-button>
-        <fancy-button>fancy button</fancy-button>
-        <fancy-button>fancy button</fancy-button>
-        <fancy-button>fancy button</fancy-button>
+        <section>
+          <h2 id="fancy-button">Fancy Button</h2>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+        </section>
+        <section>
+          <h2 id="color-button">Color Button</h2>
+          <button-red>red</button-red>
+          <button-pink>pink</button-pink>
+          <button-purple>purple</button-purple>
+          <button-deep-purple>deep purple</button-deep-purple>
+          <button-indigo>indigo</button-indigo>
+          <button-blue>blue</button-blue>
+          <button-light-blue>light blue</button-light-blue>
+          <button-cyan>cyan</button-cyan>
+          <button-teal>teal</button-teal>
+          <button-green>green</button-green>
+          <button-light-green>light green</button-light-green>
+          <button-lime>lime</button-lime>
+          <button-yellow>yellow</button-yellow>
+          <button-amber>amber</button-amber>
+          <button-orange>orange</button-orange>
+          <button-deep-orange>deep orange</button-deep-orange>
+          <button-brown>brown</button-brown>
+          <button-grey>grey</button-grey>
+          <button-blue-grey>blue grey</button-blue-grey>
+          <button-black>black</button-black>
+        </section>
         <section>
           <h2 id="shadow-dom">Shadow DOM</h2>
           <ul>
