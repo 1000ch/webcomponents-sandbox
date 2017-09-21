@@ -3,7 +3,6 @@ import AppDrawer from './src/app-drawer.js';
 import AppHeader from './src/app-header.js';
 import AppMain from './src/app-main.js';
 import FancyButton from './fancy-button.js';
-import './src/button/index.js';
 
 customElements.define('app-layout', AppLayout);
 customElements.define('app-drawer', AppDrawer);

@@ -131,7 +131,49 @@
     <script src="./lib/inert.min.js"></script>
     <script nomodule src="./lib/webcomponents-sd-ce.js"></script>
     <script nomodule src="./fallback.js"></script>
-    <script type="module" src="./src/button/index.js"></script>
+    <script type="module" async>
+      import ButtonRed from './src/button/button-red.js';
+      import ButtonPink from './src/button/button-pink.js';
+      import ButtonPurple from './src/button/button-purple.js';
+      import ButtonDeepPurple from './src/button/button-deep-purple.js';
+      import ButtonIndigo from './src/button/button-indigo.js';
+      import ButtonBlue from './src/button/button-blue.js';
+      import ButtonLightBlue from './src/button/button-light-blue.js';
+      import ButtonCyan from './src/button/button-cyan.js';
+      import ButtonTeal from './src/button/button-teal.js';
+      import ButtonGreen from './src/button/button-green.js';
+      import ButtonLightGreen from './src/button/button-light-green.js';
+      import ButtonLime from './src/button/button-lime.js';
+      import ButtonYellow from './src/button/button-yellow.js';
+      import ButtonAmber from './src/button/button-amber.js';
+      import ButtonOrange from './src/button/button-orange.js';
+      import ButtonDeepOrange from './src/button/button-deep-orange.js';
+      import ButtonBrown from './src/button/button-brown.js';
+      import ButtonGrey from './src/button/button-grey.js';
+      import ButtonBlueGrey from './src/button/button-blue-grey.js';
+      import ButtonBlack from './src/button/button-black.js';
+
+      customElements.define('button-red', ButtonRed);
+      customElements.define('button-pink', ButtonPink);
+      customElements.define('button-purple', ButtonPurple);
+      customElements.define('button-deep-purple', ButtonDeepPurple);
+      customElements.define('button-indigo', ButtonIndigo);
+      customElements.define('button-blue', ButtonBlue);
+      customElements.define('button-light-blue', ButtonLightBlue);
+      customElements.define('button-cyan', ButtonCyan);
+      customElements.define('button-teal', ButtonTeal);
+      customElements.define('button-green', ButtonGreen);
+      customElements.define('button-light-green', ButtonLightGreen);
+      customElements.define('button-lime', ButtonLime);
+      customElements.define('button-yellow', ButtonYellow);
+      customElements.define('button-amber', ButtonAmber);
+      customElements.define('button-orange', ButtonOrange);
+      customElements.define('button-deep-orange', ButtonDeepOrange);
+      customElements.define('button-brown', ButtonBrown);
+      customElements.define('button-grey', ButtonGrey);
+      customElements.define('button-blue-grey', ButtonBlueGrey);
+      customElements.define('button-black', ButtonBlack);
+    </script>
     <script type="module" src="./app.js"></script>
   </body>
 </html>
