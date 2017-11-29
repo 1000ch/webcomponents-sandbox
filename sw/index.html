@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Components sandbox</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+    <link rel="stylesheet" href="../app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic|Material+Icons">
+  </head>
+  <body>
+    <app-layout>
+      <app-header>
+        <i id="toggle" class="material-icons material-spec-icon" title="Show navigation">menu</i>
+        <h2>Web Components sandbox</h2>
+      </app-header>
+      <app-drawer slot="drawer">
+        <nav class="nav">
+          <h2>Demo</h2>
+          <ul>
+            <li>
+              <a href="#fancy-button">Fancy Button</a>
+            </li>
+            <li>
+              <a href="#color-button">Color Button</a>
+            </li>
+          </ul>
+          <h2>Spec</h2>
+          <ul>
+            <li>
+              <a href="#shadow-dom">Shadow DOM</a>
+            </li>
+            <li>
+              <a href="#custom-elements">Custom Elements</a>
+            </li>
+            <li>
+              <a href="#templates">Templates</a>
+            </li>
+            <li>
+              <a href="#es-modules">ES Modules</a>
+            </li>
+          </ul>
+          <h2>Tools</h2>
+          <ul>
+            <li>
+              <a href="#libraries">Libraries</a>
+            </li>
+            <li>
+              <a href="#polyfills">Polyfills</a>
+            </li>
+            <li>
+              <a href="#tools">Tools</a>
+            </li>
+          </ul>
+        </nav>
+      </app-drawer>
+      <app-main>
+        <section>
+          <h2 id="fancy-button">Fancy Button</h2>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+          <fancy-button>fancy button</fancy-button>
+        </section>
+        <section>
+          <h2 id="color-button">Color Button</h2>
+          <button-red>red</button-red>
+          <button-pink>pink</button-pink>
+          <button-purple>purple</button-purple>
+          <button-deep-purple>deep purple</button-deep-purple>
+          <button-indigo>indigo</button-indigo>
+          <button-blue>blue</button-blue>
+          <button-light-blue>light blue</button-light-blue>
+          <button-cyan>cyan</button-cyan>
+          <button-teal>teal</button-teal>
+          <button-green>green</button-green>
+          <button-light-green>light green</button-light-green>
+          <button-lime>lime</button-lime>
+          <button-yellow>yellow</button-yellow>
+          <button-amber>amber</button-amber>
+          <button-orange>orange</button-orange>
+          <button-deep-orange>deep orange</button-deep-orange>
+          <button-brown>brown</button-brown>
+          <button-grey>grey</button-grey>
+          <button-blue-grey>blue grey</button-blue-grey>
+          <button-black>black</button-black>
+        </section>
+        <section>
+          <h2 id="shadow-dom">Shadow DOM</h2>
+          <ul>
+            <li>
+              <a href="https://www.w3.org/TR/shadow-dom/">Shadow DOM</a>
+            </li>
+            <li>
+              <a href="https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom">Shadow DOM v1: Self-Contained Web Components</a>
+            </li>
+            <li>
+              <a href="http://caniuse.com/#feat=shadowdomv1">Shadow DOM v1 - Can I use...</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="custom-elements">Custom Elements</h2>
+          <ul>
+            <li>
+              <a href="https://www.w3.org/TR/custom-elements/">Custom Elements</a>
+            </li>
+            <li>
+              <a href="https://developers.google.com/web/fundamentals/architecture/building-components/customelements">Custom Elements v1: Reusable Web Components</a>
+            </li>
+            <li>
+              <a href="http://caniuse.com/#feat=custom-elementsv1">Custom Elements v1 - Can I use...</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="templates">Templates</h2>
+          <ul>
+            <li>
+              <a href="https://html.spec.whatwg.org/#the-template-element">4.12.3 The template element</a>
+            </li>
+            <li>
+              <a href="http://caniuse.com/#feat=template">HTML templates - Can I use...</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="es-modules">ES Modules</h2>
+          <ul>
+            <li>
+              <a href="https://ponyfoo.com/articles/es6-modules-in-depth">ES6 Modules in Depth</a>
+            </li>
+            <li>
+              <a href="https://jakearchibald.com/2017/es-modules-in-browsers/">ECMAScript modules in browsers - JakeArchibald.com</a>
+            </li>
+            <li>
+              <a href="http://caniuse.com/#feat=es6-module">JavaScript modules via script tag - Can I use...</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="libraries">Libraries</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/Polymer/polymer">Polymer/polymer</a>
+            </li>
+            <li>
+              <a href="https://github.com/skatejs/skatejs">skatejs/skatejs</a>
+            </li>
+            <li>
+              <a href="https://github.com/PolymerLabs/lit-html">PolymerLabs/lit-html</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="polyfills">Polyfills</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/webcomponents/webcomponentsjs">webcomponents/webcomponentsjs</a>
+            </li>
+            <li>
+              <a href="https://github.com/webcomponents/shadydom">webcomponents/ShadyDOM</a>
+            </li>
+            <li>
+              <a href="https://github.com/webcomponents/shadycss">webcomponents/ShadyCSS</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="tools">Tools</h2>
+          <ul>
+            <li>
+              <a href="https://github.com/webcomponents/custom-elements-everywhere">Custom Elements Everywhere</a>
+            </li>
+          </ul>
+        </section>
+      </app-main>
+    </app-layout>
+    <script>
+      navigator.serviceWorker.register('sw.js', {
+        scope: './'
+      });
+    </script>
+    <script src="../lib/inert.min.js"></script>
+    <script nomodule src="../lib/webcomponents-sd-ce.js"></script>
+    <script nomodule src="../fallback.js"></script>
+    <script type="module" src="../src/button/index.js"></script>
+    <script type="module" src="../app.js"></script>
+  </body>
+</html>
